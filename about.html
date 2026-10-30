@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SPC Question Bank &amp; Answer Marking Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📚 SPC Question Bank &amp; Answer Marking Portal</h1>
+    <p>Add questions, manage options, and mark the correct answers collaboratively.</p>
+  </header>
+
+  <section><div class="sets" id="sets"></div></section>
+
+  <h2>📊 Dashboard</h2>
+  <section>
+    <div class="stats" id="stats"></div>
+    <div class="bar"><i id="barfill"></i></div>
+    <div class="barlbl"><span>Progress</span><span id="pct">0%</span></div>
+  </section>
+
+  <h2 id="setTitle">Questions</h2>
+  <div class="tools">
+    <input type="search" id="search" placeholder="🔍 Search questions or options…" aria-label="Search questions">
+    <div class="seg" id="seg">
+      <button data-f="all" class="on">All</button><button data-f="a">Answered</button><button data-f="u">Unanswered</button>
+    </div>
+    <input type="number" id="jump" min="1" placeholder="Go to #" aria-label="Jump to question number">
+    <button class="btn ghost" data-act="go">Go</button>
+    <button class="btn" data-act="aq">＋ Add question</button>
+  </div>
+  <div class="nav" id="nav"></div>
+  <div id="list"></div>
+</div>
+<div id="modal"></div>
+<div id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
